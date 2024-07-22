@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+</head>
+<style>
+    h1{
+        background: dodgerblue;
+        text-align: center; 
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 100px 100px;
+        grid-gap: 10px;
+        width: 100vw;
+        height: 100vh;
+
+    
+    }
+    .titles1{
+        background: #aaa;
+        grid-column: 1/4;
+    }
+    .titles2{
+        background: #a32f2f;  
+        grid-row: 2/4;      
+    }
+    .titles3{
+        background: #632a2a;
+       
+
+    }
+    .titles4{
+        background: #4b3b3b;
+        
+    }
+    .titles5{
+        background: #836b6b;
+        grid-column: 2/4;
+    }
+    .titles6{
+        background: #e60a0a;
+        grid-column: 1/4;
+        grid-row: 6/0;
+        height: 100px;
+    }
+
+    
+
+</style>
+<body>
+    <h1>CSS GRID</h1>
+ <div class="container">
+    <div class="titles titles1">First</div>
+    <div class="titles titles2">Second</div>
+    <div class="titles titles3">Thrid</div>
+    <div class="titles titles4">Fourth</div>
+    <div class="titles titles5">Fifth</div>
+    <div class="titles titles6">Sixth</div>
+</div>
+</body>
+</html>
